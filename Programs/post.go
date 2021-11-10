@@ -9,9 +9,10 @@ import (
 
 func main() {
 	
-    fmt.Println("Enter email address")
-
-    resp, err := http.PostForm("https://httpbin.org/post", data)
+	fmt.Println("Enter email: ")
+	fmt.Scanf("%s", &email)
+	
+    resp, err := http.PostForm("https://httpbin.org/post", email)
 
     if err != nil {
         log.Fatal(err)
