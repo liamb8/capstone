@@ -9,7 +9,7 @@ import (
 
 func main() {
 	
-	fmt.Println("Enter email address")
+    fmt.Println("Enter email address")
 
     resp, err := http.PostForm("https://httpbin.org/post", data)
 
