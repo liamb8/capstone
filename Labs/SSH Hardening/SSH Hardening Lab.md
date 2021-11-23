@@ -54,9 +54,9 @@ By default SSH uses Protocol 1 to change this add `Protocol 2` in the SSH config
 
 
 
-To set a session timeout uncomment the line `ClientAliveInterval` and change the value that was set there to `300`. This will set a session timeout of 300 seconds or 5 minutes.  
+To set a session timeout uncomment the line `ClientAliveInterval` and change the value that was set there to `300`. This will set a session timeout of 300 seconds or 5 minutes.
 
-
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/ClientAliveInt.JPG)
 
 ## Allow Specific Users Access to SSH
 
