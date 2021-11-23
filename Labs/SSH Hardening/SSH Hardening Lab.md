@@ -20,9 +20,9 @@ To only use public key authentication to login to a user account you first need 
 
 
 
-After doing those steps you will need to edit the SSH config file in order for SSH to authenticate with a public key. Bellow are the 2 lines that you will need to uncomment or add within   the SSH config file on the Ubuntu vm. You will want to change PubkeyAuthentication from no to yes and PasswordAuthentication from yes to no.
+After doing those steps you will need to edit the SSH config file in order for SSH to authenticate with a public key. Bellow are the 2 lines that you will need to uncomment or add within   the SSH config file on the Ubuntu vm. You will want to change `PubkeyAuthentication` from no to yes and `PasswordAuthentication` from yes to no.
 
-
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/PasswordAuth.JPG)
 
 
 
@@ -32,6 +32,8 @@ After doing those steps you will need to edit the SSH config file in order for S
 
 To disable empty passwords add or uncomment the line `PermitEmptyPasswords yes` and change it to no. This will prevent anyone from trying to login without using a password.
 
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/PasswordAuth.JPG)
+
 
 
 ## Forbidding Root Login
@@ -40,6 +42,8 @@ To disable empty passwords add or uncomment the line `PermitEmptyPasswords yes` 
 
 To disable root login uncomment the `PermitRootLogin yes` and change it to no. This will disable anyone from attempting to login under the `root` account.
 
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/PermitRootLogin.JPG)
+
 
 
 ## Using SSH Protocol 2
@@ -47,6 +51,8 @@ To disable root login uncomment the `PermitRootLogin yes` and change it to no. T
 
 
 By default SSH uses Protocol 1 to change this add `Protocol 2` in the SSH config file. The will allow SSH to run on Protocol 2 instead of the default Protocol 1.
+
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/Protocol.JPG)
 
 
 
@@ -57,6 +63,8 @@ By default SSH uses Protocol 1 to change this add `Protocol 2` in the SSH config
 To set a session timeout uncomment the line `ClientAliveInterval` and change the value that was set there to `300`. This will set a session timeout of 300 seconds or 5 minutes.
 
 ![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/ClientAliveInt.JPG)
+
+
 
 ## Allow Specific Users Access to SSH
 
@@ -72,5 +80,5 @@ To set a session timeout uncomment the line `ClientAliveInterval` and change the
 
 To limit the number of authentication attempts when trying to SSH into an account uncomment the line `MaxAuthTries ` and set the value to `3`. This will set the number of authentication attempts allowed to 3 and after 3 failed authentication attempts the ssh session will close.
 
-
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/MaxAuth.JPG)
 
