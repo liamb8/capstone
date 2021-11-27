@@ -70,5 +70,9 @@ When a user tries to login to a system and is unable to authenticate themselves 
 
 To limit the number of authentication attempts when trying to SSH into an account uncomment the line `MaxAuthTries ` and set the value to `3`. This will set the number of authentication attempts allowed to 3 and after 3 failed authentication attempts the ssh session will close.
 
+Once finished with all the previous steps and this step restart the ssh service in order for the changes made to take affect. You can do this by doing `sudo systemctl restart sshd`. 
+
+
+
 ![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/MaxAuth.JPG)
 
