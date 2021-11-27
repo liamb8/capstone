@@ -6,10 +6,6 @@
 
 
 
-To start off open the SSH config file
-
-`sudo nano /etc/ssh/sshd_config` 
-
 
 
 ## Disabling Password-Based Authentication
