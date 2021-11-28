@@ -4,7 +4,25 @@
 
 # SSH Hardening Lab
 
+Virtual Machine Download Link
 
+------
+
+Before starting the lab, make sure to download the ZIP file provided. After downloading unzip the file and place the folder wherever you find appropriate. The instructions below assume that you're using VMware Workstation Client although you can still follow them if you're using other VM clients.
+
+Go to the File tab in the upper left hand corner of the VM clients window and click on it, a drop down menu will show up. From there click on Open. After that a file explorer will open navigate to where you put the VM you unzipped. Click on the `SSH Hardening Lab.vmx` image and it should show up in your client. If this doesn't work click on the `SSH Hardening Lab.ovf` and it will bring up an import menu. 
+
+Once you have done this click on the Import button and the VM should show up. After this click on the Edit Virtual Machine Setting, this is where you can change the settings for your VM. Below is an image of what the settings of the VM should be. After checking that all the settings are the same click Ok and then right click on the VM and choose power and then click on Start up guest to power on the VM.
+
+
+
+### User Accounts:
+
+
+
+- John - Administrator
+  - User Login: `john`
+  - Password: `Fallentrees4`
 
 
 
