@@ -1,7 +1,3 @@
-# 
-
-
-
 # SSH Hardening Lab
 
 Virtual Machine Download Link
@@ -18,7 +14,7 @@ Once you have done this click on the Import button and the VM should show up. Af
 
 ### User Accounts:
 
-
+Below is the user account which will be used for this lab.
 
 - John - Administrator
   - User Login: `john`
