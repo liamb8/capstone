@@ -9,8 +9,7 @@ Before starting the lab, make sure to **download the ZIP file provided**. After 
 Go to the **File** tab in the upper left-hand corner of the VM clients window and click on it, a drop-down menu will show up. From there, click on **Open**. After that, a file explorer will open navigate to where you put the VM you unzipped. Click on the `SSHHardeningLab.vmx` image and it should show up in your client. If this doesn't work click on the `SSHHardeningLab.ovf` and it will bring up an import menu. 
 
 Once you have done this click on the **Import** button and the VM should show up. After this right click on the VM and click on **settings**, this is where you can change the settings for your VM. Below is an image of what the settings of the VM should be. After checking that all the settings are the same click **Ok** and then right-click on the VM and choose power and then click on **Start up guest** to power on the VM.
-
-
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/vmsettings.jpg)
 
 ### User Accounts:
 
