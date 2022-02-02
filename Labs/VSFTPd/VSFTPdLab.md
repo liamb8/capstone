@@ -2,7 +2,7 @@
 
 # VSFTPd Lab
 
-**Virtual Machine Download Link**
+[**Virtual Machine Download Link**](https://drive.google.com/drive/folders/1D6WGWklYbE5IOQp-BTO6e7TZb1JRKwDa?usp=sharing)
 
 ------
 
@@ -20,6 +20,8 @@ Below is the user account which will be used for this lab.
 - John - Administrator
   - User Login: `john`
   - Password: `Fallentrees4`
+
+![](https://github.com/liamb8/capstone/blob/main/Labs/SSH%20Hardening/Pictures/vmsettings.jpg)
 
 ------
 
