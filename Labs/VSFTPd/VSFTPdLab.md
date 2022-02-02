@@ -162,8 +162,8 @@ Visit ftp://YOUR-SERVER-IP and login using the username and password created ear
 ## Secure VSFTPd:
 
 - edit /etc/vsftpd.conf file by doing `nano /etc/vsftpd.conf`
-- Uncomment **ftpd_banner** and change the text to anything you want or leave it blank to hide the version. Then press `Cntrl + X` to save the file.
+- Uncomment **ftpd_banner** and change the text to anything you want or leave it blank to hide the version. Then press `Cntrl + X` to save the file. By doing this we can hide the version of vsFTPd we are using and prevent it from being exposed to those who may want to take advantage of it. By finding the version an attacker could easily use a public exploit database to search for a vulnerability within that version and possibly break in. 
 
-- Disable anonymous login for FTP server by editing the FTP configuration file `/etc/vsftpd.conf` and commenting out anonymous_enable line or change the attribute to no from yes.
+- Disable anonymous login for FTP server by editing the FTP configuration file `/etc/vsftpd.conf` and commenting out anonymous_enable line or change the attribute to no from yes. By default FTP services are configured to not allow anonymous logins but if an administrator has manually configured this then a user or attacker can login to the server. This can easily be done with the username `anonymous` and leaving the password blank which is the most common default setup.  
 
-- SSL/TLS should be implemented to ensure the communication is encrypted between server and client and the attacker cannot read the ciphertext. This has already been setup in the previous steps by creating the SSL certificate and editing the `/etc/vsftpd.conf` file to use SSL. 
+- SSL/TLS should be implemented to ensure the communication is encrypted between server and client and the attacker cannot read the ciphertext. This has already been setup in the previous steps by creating the SSL certificate and editing the `/etc/vsftpd.conf` file to use SSL. By implementing this we are encrypting the communication between thee server and the client and preventing any packet sniffing from seeing the content transferred in clear-text. 
