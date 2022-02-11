@@ -99,7 +99,40 @@ Restart apache
 
 ### HTTP Request Methods
 
+Enable the Apache2 mod_rewrite Module with:
 
+`sudo a2enmod rewrite`
+
+In the apache config edit the following and change `AllowOverride None` to `AllowOverride All`:
+
+```
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride All 
+</Directory>
+```
+
+Restart apache after this:
+
+`sudo systemctl restart apache2`
+
+After this go change directories to `/var/www/html/` with `cd`. In this directory create a file called `.htaccess` with `sudo vi .htaccess`. In the file add the following lines:
+
+```
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(HEAD|PUT|DELETE|PATCH|TRACK|OPTIONS) 
+RewriteRule .* - [F]
+```
+
+The above configuration will disable HEAD, PUT, DELETE, PATCH, TRACK, and OPTIONS methods.
+
+Restart apache after this to apply the changes.
+
+`sudo systemctl restart apache2`
+
+Verify this works by doing the command `curl -i -X OPTIONS http://YOUR-SERVER-IP` in a terminal on Kali Linux. You should see a result similar to the screenshot below which confirms that it works.
+
+![image-20220210203318661](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210203318661.png)
 
 ## Check With Nikto
 
