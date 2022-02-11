@@ -1,4 +1,4 @@
-# SSH Hardening Lab
+# Apache Lab
 
 **[Virtual Machine Download Link](https://drive.google.com/file/d/1U4osXUWvy-8-l_oP_Cs8HiVIPt3mfiDx/view?usp=sharing)**
 
