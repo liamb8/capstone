@@ -59,7 +59,7 @@ After doing this save and close the file and restart apache with `sudo systemctl
 
 Directory browning lets you view different directories stored within apaches `/var/www/html` directory. To test this we can add a new directory in `/var/www/html` by doing `sudo mkdir test` and then `sudo vi test.txt` and adding some words into that file. Now by going back to the apache web server page and type in `YOUR-SERVER-IP/test` it will then show the directory we added with the file. 
 
-![image-20220210193728876](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210193728876.png)
+![](https://github.com/liamb8/capstone/blob/main/Labs/Apache%20Lab/Pictures/directory.JPG)
 
 To disable this open the config file in `/etc/apache2/apache2.conf` and find the lines below.
 
@@ -85,7 +85,7 @@ Save and close the file and then restart the Apache webserver.
 
 When trying to access the same directory we will now get a Forbidden message.
 
-![image-20220210194510106](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210194510106.png)
+![](https://github.com/liamb8/capstone/blob/main/Labs/Apache%20Lab/Pictures/forbidden.JPG)
 
 ### Etag
 
@@ -132,7 +132,7 @@ Restart apache after this to apply the changes.
 
 Verify this works by doing the command `curl -i -X OPTIONS http://YOUR-SERVER-IP` in a terminal on Kali Linux. You should see a result similar to the screenshot below which confirms that it works.
 
-![image-20220210203318661](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210203318661.png)
+![](https://github.com/liamb8/capstone/blob/main/Labs/Apache%20Lab/Pictures/403forbidden.JPG)
 
 ## Check With Nikto
 
