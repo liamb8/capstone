@@ -28,7 +28,7 @@ Below is the user account which will be used for this lab.
 
 When logged in to the Ubuntu VM install apache by doing `sudo apt install apache2`. 
 
-Make a copy of the apache config in `/etc/apache2/` by doing `sudo cp /etc/apache2/apache2.conf`.
+Make a copy of the apache config in `/etc/apache2/` by doing `sudo cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.orig`.
 
 ## Run the Script
 
