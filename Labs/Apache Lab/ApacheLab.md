@@ -42,7 +42,7 @@ Make a copy of the apache config in `/etc/apache2/` by doing `sudo cp /etc/apach
 
 In the default configuration for Apache the web server version is exposed and available for anyone to see. You don't want to expose the version of the web server you're using as this can help hackers identify vulnerabilities with that specific version. As we can see with a wireshark capture of just going to the web page it will display the Apache version info.
 
-![image-20220210191444331](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210191444331.png)
+![](https://github.com/liamb8/capstone/blob/main/Labs/Apache%20Lab/Pictures/apacheversion.JPG)
 
 To fix this go to the apache config file at `/etc/apache2/apache2.conf` and open it with `vi` or `nano`. Add the following lines to the end of the file.
 
@@ -53,9 +53,7 @@ ServerSignature Off
 
 After doing this save and close the file and restart apache with `sudo systemctl restart apache2`. Now the version info won't show up in a packet capture anymore.
 
-![image-20220210192801123](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220210192801123.png)
-
-
+![](https://github.com/liamb8/capstone/blob/main/Labs/Apache%20Lab/Pictures/apacheversiongone.JPG)
 
 ### Disable Directory Browsing
 
