@@ -32,7 +32,9 @@ Make a copy of the apache config in `/etc/apache2/` by doing `sudo cp /etc/apach
 
 ## Run the Script
 
+Run the script to edit the Apache Config file to set it up with insecure settings.
 
+`./apachescript`
 
 ## Hardening Steps
 
@@ -136,3 +138,8 @@ Verify this works by doing the command `curl -i -X OPTIONS http://YOUR-SERVER-IP
 
 ## Check With Nikto
 
+After doing all the hardening steps check the results with Nikto by doing:
+
+`nikto -h YOUR-SERVER-IP`
+
+The results of Nikto should show a change in the vulnerabilities within the Apache server. 
