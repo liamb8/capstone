@@ -6,7 +6,7 @@
 
 ------
 
-Before starting the lab, make sure to **download the ZIP file provided**. After downloading, **unzip the file** and place the folder wherever you find appropriate. The instructions below assume that you're using VMware Workstation Client, although you can still follow them if you're using other VM clients.
+Before starting the lab, make sure to **download the  file provided**. After downloading, place the file in a folder wherever you find appropriate. The instructions below assume that you're using VMware Workstation Client, although you can still follow them if you're using other VM clients.
 
 Go to the **File** tab in the upper left-hand corner of the VM clients window and click on it, a drop-down menu will show up. From there, click on **Open**. After that, a file explorer will open navigate to where you put the VM you unzipped. Click on the `VSFTPdLab.vmx` image and it should show up in your client. If this doesn't work click on the `VSFTPdLab.ovf` and it will bring up an import menu. 
 
@@ -59,7 +59,7 @@ adduser vsftp
 ```
 mkdir /home/vsftp/ftp
 
-chmod a-w /home/vsftp/ftp
+chmod -w /home/vsftp/ftp
 ```
 
 ### Create an upload directory and set permissions
@@ -153,7 +153,9 @@ systemctl restart vsftpd
 
 ## How to Connect to FTP Server:
 
-Visit ftp://YOUR-SERVER-IP and login using the username and password created earlier in order to view files uploaded.
+Download **FileZilla** [here](https://filezilla-project.org/download.php?platform=win64) and install it. After it finishes installing open it up and connect to your ftp server. Input the username and password you setup the `vsftp` account with and your servers ip address to connect. 
+
+![image-20220216141145360](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220216141145360.png)
 
 ------
 

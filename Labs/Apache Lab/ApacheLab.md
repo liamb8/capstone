@@ -4,7 +4,7 @@
 
 ------
 
-Before starting the lab, make sure to **download the ZIP file provided**. After downloading, **unzip the file** and place the folder wherever you find appropriate. The instructions below assume that you're using VMware Workstation Client, although you can still follow them if you're using other VM clients.
+Before starting the lab, make sure to **download the  file provided**. After downloading, place the file in a folder wherever you find appropriate. The instructions below assume that you're using VMware Workstation Client, although you can still follow them if you're using other VM clients.
 
 Go to the **File** tab in the upper left-hand corner of the VM clients window and click on it, a drop-down menu will show up. From there, click on **Open**. After that, a file explorer will open navigate to where you put the VM you unzipped. Click on the `ApacheLab.vmx` image and it should show up in your client. If this doesn't work click on the `ApacheLab.ovf` and it will bring up an import menu. 
 
