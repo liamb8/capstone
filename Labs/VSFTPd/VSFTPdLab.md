@@ -153,7 +153,7 @@ systemctl restart vsftpd
 
 ## How to Connect to FTP Server:
 
-Download **FileZilla** [here](https://filezilla-project.org/download.php?platform=win64) and install it. After it finishes installing open it up and connect to your ftp server. Input the username and password you setup the `vsftp` account with and your servers ip address to connect. 
+Download **FileZilla** [here](https://filezilla-project.org/download.php?platform=win64) and install it. After it finishes installing open it up and connect to your ftp server. Input the username and password you setup the `vsftp` account with and your servers ip address to connect. You don't need to add a port number only the ip address and the user and password.
 
 ![](https://github.com/liamb8/capstone/blob/main/Labs/VSFTPd/Pictures/FileZilla.JPG)
 
