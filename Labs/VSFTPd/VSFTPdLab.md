@@ -155,7 +155,7 @@ systemctl restart vsftpd
 
 Download **FileZilla** [here](https://filezilla-project.org/download.php?platform=win64) and install it. After it finishes installing open it up and connect to your ftp server. Input the username and password you setup the `vsftp` account with and your servers ip address to connect. 
 
-![image-20220216141145360](C:\Users\liam\AppData\Roaming\Typora\typora-user-images\image-20220216141145360.png)
+![](https://github.com/liamb8/capstone/blob/main/Labs/VSFTPd/Pictures/FileZilla.JPG)
 
 ------
 
